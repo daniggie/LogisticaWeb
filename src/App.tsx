@@ -1,15 +1,16 @@
-import React from 'react';
-import GlobalStyle from './styles/global';
+import React from "react";
 
-import Sign from './pages/Signin';
+import GlobalStyle from "./styles/global";
+
+import SigUp from "./pages/SignUp";
 
 const App: React.FC = () => {
   return (
     <>
-      <Sign />
+      <SigUp />
       <GlobalStyle />
     </>
-    );
+  );
 };
 
 export default App;

@@ -1,33 +1,32 @@
 import React from "react";
-import { FiLogIn } from 'react-icons/fi';
+import { FiLogIn, FiMail, FiLock } from "react-icons/fi";
 
-import Input from '../../components/input';
+import Input from "../../components/Input";
+import Button from "../../components/Button";
 
-import { Container, Content, Background } from './style';
+import { Container, Content, Background } from "./styles";
 
-const Sign: React.FC = () => (
-    <Container>
+const SigIn: React.FC = () => (
+  <Container>
+    <Content>
+      <form>
+        <h1>Faça seu login</h1>
 
-        <Background />
+        <Input icon={FiMail} name="email" placeholder="E-mail" />
+        <Input icon={FiLock} name="senha" type="password" placeholder="Senha" />
 
-        <Content>
-            <form>
-                <h1>Fazer Login</h1>
+        <Button type="submit">Entrar</Button>
 
-                <Input name="E-mail" placeholder="E-mail..." />
-                <Input name="Senha" type="password" placeholder="Senha..." />
-                <a href="teste">Esqueci a senha!</a>
+        <a href="teste">Esqueci minha senha</a>
+      </form>
 
-                <button type="submit"> Entrar </button>
-            </form>
-
-            <a href="teste">
-                <FiLogIn />
-                Criar Conta
-            </a>
-        </Content>
-        
-    </Container>
+      <a href="teste">
+        <FiLogIn />
+        Criar conta
+      </a>
+    </Content>
+    <Background />
+  </Container>
 );
 
-export default Sign;
+export default SigIn;
