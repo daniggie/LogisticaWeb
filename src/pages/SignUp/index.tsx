@@ -20,7 +20,7 @@ const SigUp: React.FC = () => {
       const schema = Yup.object().shape({
         email: Yup.string()
           .required("E-mail obrigatório")
-          .email("E-mail inválido"),
+          .email("Informe um e-mail válido"),
         senha: Yup.string().min(6, "No mínimo 6 digitos"),
       });
 
