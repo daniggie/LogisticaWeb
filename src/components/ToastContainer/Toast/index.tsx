@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import {
-  FiAlertCircle,
   FiXCircle,
   FiCheckCircle,
   FiInfo,
